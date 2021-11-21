@@ -13,6 +13,8 @@ from entities.player import Player
 from input_handlers import EventHandler, MainGameEventHandler
 from utils.delta_time import DeltaTime
 
+from sections.game_section import GameSection
+
 
 class GameState(Enum):
     MENU = auto()
@@ -79,8 +81,7 @@ class Engine:
                 entity.update()
 
     def handle_events(self, context: tcod.context.Context):
-        self.event_handler.handle_events(
-            context, discard_events=self.full_screen_effect.in_effect or self.state == GameState.GAME_OVER)
+        self.event_handler.handle_events(context, discard_events=self.full_screen_effect.in_effect or self.state == GameState.GAME_OVER)
 
     def setup_game(self):
         self.player = Player(self, 7, 4)
@@ -89,12 +90,15 @@ class Engine:
         self.tick_length = 2
 
     def setup_effects(self):
-        self.full_screen_effect = MeltWipeEffect(
-            self, 0, 0, self.screen_width, self.screen_height, MeltWipeEffectType.RANDOM, 40)
+        self.full_screen_effect = MeltWipeEffect(self, 0, 0, self.screen_width, self.screen_height, MeltWipeEffectType.RANDOM, 40)
 
     def setup_sections(self):
         self.menu_sections = {}
+
         self.game_sections = {}
+        self.game_section =  GameSection(self, 0, 0, self.screen_width, self.screen_height, "start")
+        self.game_sections["GameSection"] =self.game_section
+
         self.completion_sections = {}
 
         self.disabled_sections = ["confirmationDialog", "notificationDialog"]
@@ -178,3 +182,7 @@ class Engine:
 
     def is_ui_paused(self):
         return self.full_screen_effect.in_effect
+
+    def number_input(self, number):
+        #If in just a normal game section
+        self.game_section.number_input(number)

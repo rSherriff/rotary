@@ -205,7 +205,7 @@ class Input(UIElement):
             elif key == tcod.event.K_SPACE and len(self.text) < self.width - 1:
                 self.text += ' '
             elif len(self.text) < self.width - 1 and tcod.event.K_a <= key <= tcod.event.K_z:
-                letter = get_letter_key(key)
+                letter = get_key_character(key)
                 if keyboard.is_pressed('shift'):
                     letter = letter.capitalize()
                 self.text += letter
@@ -324,7 +324,7 @@ def ele_comp(a:UIElement, b:UIElement):
     else:
         return a
 
-def get_letter_key(key):
+def get_key_character(key):
     if key == tcod.event.K_a:
         return 'a'
     elif key == tcod.event.K_b:
@@ -377,5 +377,25 @@ def get_letter_key(key):
         return 'y'
     elif key == tcod.event.K_z:
         return 'z'
+    elif key == tcod.event.K_0:
+        return '0'
+    elif key == tcod.event.K_1:
+        return '1'
+    elif key == tcod.event.K_2:
+        return '2'
+    elif key == tcod.event.K_3:
+        return '3'
+    elif key == tcod.event.K_4:
+        return '4'
+    elif key == tcod.event.K_5:
+        return '5'
+    elif key == tcod.event.K_6:
+        return '6'
+    elif key == tcod.event.K_7:
+        return '7'
+    elif key == tcod.event.K_8:
+        return '8'
+    elif key == tcod.event.K_9:
+        return '9'
 
     return ''

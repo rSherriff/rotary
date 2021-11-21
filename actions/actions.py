@@ -104,3 +104,11 @@ class OpenNotificationDialog(Action):
 class CloseNotificationDialog(Action):
     def perform(self) -> None:
         return self.engine.close_notification_dialog()
+
+class NumberInputAction(Action):
+    def __init__(self, engine, number) -> None:
+        super().__init__(engine)
+        self.number = number
+
+    def perform(self) -> None:
+        return self.engine.number_input(self.number)

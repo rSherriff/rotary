@@ -1,8 +1,11 @@
-import numpy as np
-import xp_loader
 import gzip
-import tile_types
+import os
 import random
+
+import numpy as np
+import tile_types
+import xp_loader
+
 
 class Section:
     def __init__(self, engine, x: int, y: int, width: int, height: int, xp_filepath: str = ""):
@@ -24,7 +27,7 @@ class Section:
         self.invisible = False
 
     def load_xp_data(self, filepath):
-        if filepath:
+        if os.path.isfile(filepath):
             xp_file = gzip.open("images/" + filepath)
             raw_data = xp_file.read()
             xp_file.close()
@@ -42,6 +45,12 @@ class Section:
                             break
                 else:
                     break
+            return True
+        return False
+
+    def load_xp_and_tiles(self, filepath):
+        xp_data = self.load_xp_data(filepath)
+        return self.load_tiles(filepath, xp_data)
 
 
     def render(self, console):
