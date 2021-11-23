@@ -21,17 +21,21 @@ class Section:
         self.tiles =  np.full((self.width, self.height), fill_value=tile, order="F")
         self.ui = None
 
-        xp_data = self.load_xp_data(xp_filepath)
-        self.load_tiles(xp_filepath, xp_data)
+        if xp_filepath != "":
+            xp_data = self.load_xp_data(xp_filepath)
+            self.load_tiles(xp_filepath, xp_data)
 
         self.invisible = False
 
     def load_xp_data(self, filepath):
+        filepath = "images/" + filepath + ".xp"
         if os.path.isfile(filepath):
-            xp_file = gzip.open("images/" + filepath)
+            xp_file = gzip.open(filepath)
             raw_data = xp_file.read()
             xp_file.close()
             return xp_loader.load_xp_string(raw_data)
+        else:
+            print("File '" + filepath +"' doesn't exist!")
 
     def load_tiles(self, data_name, xp_data):
         if xp_data is not None:

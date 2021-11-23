@@ -96,7 +96,7 @@ class Engine:
         self.menu_sections = {}
 
         self.game_sections = {}
-        self.game_section =  GameSection(self, 0, 0, self.screen_width, self.screen_height, "start")
+        self.game_section =  GameSection(self, 0, 0, self.screen_width, self.screen_height)
         self.game_sections["GameSection"] =self.game_section
 
         self.completion_sections = {}

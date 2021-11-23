@@ -1,87 +1,259 @@
 {
   "data": {
+    "prologue": {
+      "title": "--Main Menu--",
+      "links": {
+        "1": {
+          "name": "messagesPrologue",
+          "image": "blank",
+          "title": "1. Messages",
+          "x": 10,
+          "y": 17
+        }
+      }
+    },
     "start": {
-      "1": {
-        "path": "personnel",
-        "image": "blank",
-        "title": "Personnel",
-        "x": 5,
-        "y": 20
-      },
-      "2": {
-        "path": "files",
-        "image": "blank",
-        "title": "Files",
-        "x": 5,
-        "y": 21
-      },
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "0": {}
+      "title": "--Main Menu--",
+      "links": {
+        "1": {
+          "name": "messages",
+          "image": "blank",
+          "title": "[1] Messages",
+          "x": 11,
+          "y": 17
+        },
+        "2": {
+          "name": "files",
+          "image": "blank",
+          "title": "[2] Files",
+          "x": 11,
+          "y": 19
+        },
+        "3": {
+          "name": "personnel",
+          "image": "blank",
+          "title": "[3] Personnel",
+          "x": 11,
+          "y": 21
+        }
+      }
+    },
+    "messagesPrologue": {
+      "title": "--Messages--",
+      "links": {
+        "1": {
+          "name": "redwayMessage",
+          "image": "redwayMessage",
+          "title": "[1] \n    FROM: Redway \n    SUBJECT: Bonn **URGENT**",
+          "x": 11,
+          "y": 17
+        },
+        "0": {
+          "name": "prologue",
+          "image": "prologue",
+          "title": "[0] Back",
+          "x": 11,
+          "y": 21
+        }
+      }
+    },
+    "messages": {
+      "title": "--Messages--",
+      "links": {
+        "1": {
+          "name": "powellMessage",
+          "image": "powellMessage",
+          "title": "[1] NEW \n    FROM: Powell \n    SUBJECT: Your Terminal",
+          "x": 11,
+          "y": 17
+        },
+        "2": {
+          "name": "redwayMessage",
+          "image": "redwayMessage",
+          "title": "[2] FROM: Redway \n    SUBJECT: Bonn **URGENT**",
+          "x": 11,
+          "y": 21
+        },
+        "0": {
+          "name": "start",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 11,
+          "y": 24
+        }
+      }
+    },
+    "redwayMessage": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "messages",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 6,
+          "y": 47
+        }
+      }
+    },
+    "powellMessage": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "messages",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 6,
+          "y": 47
+        }
+      }
     },
     "personnel": {
-      "1": {
-        "path": "fletcher",
-        "image": "blank",
-        "title": "Fletcher",
-        "x": 5,
-        "y": 20
-      },
-      "2": {
-        "path": "bush",
-        "image": "blank",
-        "title": "Bush",
-        "x": 5,
-        "y": 21
-      },
-      "3": {
-        "path": "runciman",
-        "image": "blank",
-        "title": "Runciman",
-        "x": 5,
-        "y": 22
-      },
-      "4": {
-        "path": "wedgwood",
-        "image": "blank",
-        "title": "Wedgwood",
-        "x": 5,
-        "y": 23
-      },
-      "5": {
-        "path": "cornwell",
-        "image": "blank",
-        "title": "Cornwell",
-        "x": 5,
-        "y": 24
-      },
-      "6": {
-        "path": "peake",
-        "image": "blank",
-        "title": "Peake",
-        "x": 5,
-        "y": 25
-      },
-      "7": {
-        "path": "lodge",
-        "image": "blank",
-        "title": "Lodge",
-        "x": 5,
-        "y": 26
-      },
-      "8": "",
-      "9": "",
-      "0": {
-        "path": "start",
-        "image": "blank",
-        "title": "Back",
-        "x": 5,
-        "y": 27
+      "title": "--Personnel Menu--",
+      "links": {
+        "1": {
+          "name": "personnelSetup",
+          "image": "personnelSetup",
+          "title": "[1] Embassy Personnel Setup",
+          "x": 11,
+          "y": 17
+        },
+        "2": {
+          "name": "names",
+          "image": "blank",
+          "title": "[2] Personnel Files",
+          "x": 11,
+          "y": 19
+        },
+        "0": {
+          "name": "start",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 11,
+          "y": 21
+        }
+      }
+    },
+    "names": {
+      "title": "--Embassy Personnel--",
+      "links": {
+        "1": {
+          "name": "person",
+          "image": "fletcher",
+          "title": "[1] Richard Fletcher",
+          "x": 11,
+          "y": 17
+        },
+        "2": {
+          "name": "person",
+          "image": "portnall",
+          "title": "[2] Steven Portnall",
+          "x": 11,
+          "y": 19
+        },
+        "3": {
+          "name": "person",
+          "image": "runciman",
+          "title": "[3] Irvine Runciman",
+          "x": 11,
+          "y": 21
+        },
+        "4": {
+          "name": "person",
+          "image": "ashmore",
+          "title": "[4] Mary Ashmore",
+          "x": 11,
+          "y": 23
+        },
+        "5": {
+          "name": "person",
+          "image": "cornwell",
+          "title": "[5] Walter Cornwell",
+          "x": 11,
+          "y": 25
+        },
+        "6": {
+          "name": "person",
+          "image": "peake",
+          "title": "[6] Abigail Peake",
+          "x": 11,
+          "y": 27
+        },
+        "7": {
+          "name": "person",
+          "image": "lodge",
+          "title": "[7] Harald Lodge",
+          "x": 11,
+          "y": 29
+        },
+        "0": {
+          "name": "personnel",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 11,
+          "y": 31
+        }
+      }
+    },
+    "person": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "names",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 6,
+          "y": 48
+        }
+      }
+    },
+    "files": {
+      "title": "--Embassy Files--",
+      "links": {
+        "1": {
+          "name": "libraryMap",
+          "image": "libraryMap",
+          "title": "[1] Archive Map",
+          "x": 11,
+          "y": 17
+        },
+        "2": {
+          "name": "libraryCards",
+          "image": "libraryCards",
+          "title": "[2] Archive Access Cards",
+          "x": 11,
+          "y": 19
+        },
+        "0": {
+          "name": "start",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 11,
+          "y": 21
+        }
+      }
+    },
+    "libraryMap": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 6,
+          "y": 47
+        }
+      }
+    },
+    "libraryCards": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 59,
+          "y": 49
+        }
       }
     }
   }

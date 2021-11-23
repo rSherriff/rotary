@@ -7,7 +7,7 @@ from engine import Engine
 
 def main() -> None:
     screen_width = 70
-    screen_height = 50
+    screen_height = 52
 
     terminal_height = screen_height
     terminal_width = screen_width
