@@ -223,12 +223,19 @@
           "x": 11,
           "y": 19
         },
+        "3": {
+          "name": "libraryRecordsInfo",
+          "image": "libraryRecords",
+          "title": "[3] Archive Records",
+          "x": 11,
+          "y": 21
+        },
         "0": {
           "name": "start",
           "image": "blank",
           "title": "[0] Back",
           "x": 11,
-          "y": 21
+          "y": 23
         }
       }
     },
@@ -251,6 +258,96 @@
           "name": "files",
           "image": "blank",
           "title": "[0] Back",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "libraryRecordsInfo": {
+      "title": "",
+      "links": {
+        "1": {
+          "name": "libraryRecordsA",
+          "image": "libraryRecordsA",
+          "title": "[1] Begin",
+          "x": 56,
+          "y": 33
+        },
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "libraryRecordsA": {
+      "title": "",
+      "links": {
+        "1": {
+          "name": "libraryRecordsInfo",
+          "image": "libraryRecords",
+          "title": "[1] Back",
+          "x": 5,
+          "y": 47
+        },
+        "9": {
+          "name": "libraryRecordsB",
+          "image": "libraryRecordsB",
+          "title": "[9] Forward",
+          "x": 55,
+          "y": 47
+        },
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Exit",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "libraryRecordsB": {
+      "title": "",
+      "links": {
+        "1": {
+          "name": "libraryRecordsA",
+          "image": "libraryRecordsA",
+          "title": "[1] Back",
+          "x": 5,
+          "y": 47
+        },
+        "9": {
+          "name": "libraryRecordsC",
+          "image": "libraryRecordsC",
+          "title": "[9] Forward",
+          "x": 55,
+          "y": 47
+        },
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Exit",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "libraryRecordsC": {
+      "title": "",
+      "links": {
+        "1": {
+          "name": "libraryRecordsB",
+          "image": "libraryRecordsB",
+          "title": "[1] Back",
+          "x": 5,
+          "y": 47
+        },
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Exit",
           "x": 59,
           "y": 49
         }
