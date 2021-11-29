@@ -12,17 +12,18 @@ class GameSection(Section):
         super().__init__(engine,x,y,width,height,xp_filepath)
         self.indexIntoRender = 0
         self.numTiles = width * height
-        self.renderSpeed = 800
+        self.renderSpeed = 2000
         self.ui = GameSectionUI(self, 0,0)
 
         self.blink = False
         self.blink_key = ''
-        self.blink_interval = 0.3
+        self.blink_interval = 0.15
 
         self.currentPage = xp_filepath
         self.changing_page = False
         self.next_page_name = ''
         self.next_page_image = ''
+        self.next_page_timer = 0.5
 
         with open ( "data/pages.json" ) as f:
             self.pages = json.load(f)
@@ -83,7 +84,7 @@ class GameSection(Section):
 
                 self.blink_key = number
                 self.changing_page = True
-                Timer(1.0, self.change_page_timer_end).start()
+                Timer(self.next_page_timer, self.change_page_timer_end).start()
                 self.blink_on()
 
             else:
