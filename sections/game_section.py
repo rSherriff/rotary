@@ -27,7 +27,7 @@ class GameSection(Section):
 
         with open ( "data/pages.json" ) as f:
             self.pages = json.load(f)
-        self.change_page( page_name="start", page_image="blank")
+        self.change_page( page_name="prologue", page_image="blank")
         
 
     def render(self, console):

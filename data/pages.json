@@ -7,7 +7,7 @@
           "name": "messagesPrologue",
           "image": "blank",
           "title": "1. Messages",
-          "x": 10,
+          "x": 11,
           "y": 17
         }
       }
@@ -22,19 +22,19 @@
           "x": 11,
           "y": 17
         },
-        "2": {
+        "3": {
           "name": "files",
           "image": "blank",
-          "title": "[2] Files",
-          "x": 11,
-          "y": 19
-        },
-        "3": {
-          "name": "personnel",
-          "image": "blank",
-          "title": "[3] Personnel",
+          "title": "[3] Files",
           "x": 11,
           "y": 21
+        },
+        "2": {
+          "name": "personnel",
+          "image": "blank",
+          "title": "[2] Personnel",
+          "x": 11,
+          "y": 19
         }
       }
     },
@@ -44,7 +44,7 @@
         "1": {
           "name": "redwayMessageA",
           "image": "redwayMessageA",
-          "title": "[1] \n    FROM: Redway \n    SUBJECT: Bonn **URGENT**",
+          "title": "[1] NEW \n    FROM: Redway \n    SUBJECT: Bonn **URGENT**",
           "x": 11,
           "y": 17
         },
@@ -294,7 +294,7 @@
           "image": "blank",
           "title": "[0] Back",
           "x": 11,
-          "y": 40
+          "y": 31
         }
       }
     },
@@ -330,7 +330,7 @@
           "image": "libraryRecordsA",
           "title": "[9] Begin",
           "x": 56,
-          "y": 33
+          "y": 38
         },
         "0": {
           "name": "files",
