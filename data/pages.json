@@ -42,8 +42,8 @@
       "title": "--Messages--",
       "links": {
         "1": {
-          "name": "redwayMessage",
-          "image": "redwayMessage",
+          "name": "redwayMessageA",
+          "image": "redwayMessageA",
           "title": "[1] \n    FROM: Redway \n    SUBJECT: Bonn **URGENT**",
           "x": 11,
           "y": 17
@@ -68,8 +68,8 @@
           "y": 17
         },
         "2": {
-          "name": "redwayMessage",
-          "image": "redwayMessage",
+          "name": "redwayMessageA",
+          "image": "redwayMessageA",
           "title": "[2] FROM: Redway \n    SUBJECT: Bonn **URGENT**",
           "x": 11,
           "y": 21
@@ -83,13 +83,32 @@
         }
       }
     },
-    "redwayMessage": {
+    "redwayMessageA": {
       "title": "",
       "links": {
+        "9": {
+          "name": "redwayMessageB",
+          "image": "redwayMessageB",
+          "title": "[9] Next",
+          "x": 56,
+          "y": 47
+        },
         "0": {
           "name": "messages",
           "image": "blank",
           "title": "[0] Back",
+          "x": 6,
+          "y": 47
+        }
+      }
+    },
+    "redwayMessageB": {
+      "title": "",
+      "links": {
+        "1": {
+          "name": "redwayMessageA",
+          "image": "redwayMessageA",
+          "title": "[1] Previous",
           "x": 6,
           "y": 47
         }
@@ -113,7 +132,7 @@
         "1": {
           "name": "personnelSetup",
           "image": "personnelSetup",
-          "title": "[1] Embassy Personnel Setup",
+          "title": "[1] Embassy Personnel Structure",
           "x": 11,
           "y": 17
         },
@@ -130,6 +149,18 @@
           "title": "[0] Back",
           "x": 11,
           "y": 21
+        }
+      }
+    },
+    "personnelSetup": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "personnel",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 59,
+          "y": 49
         }
       }
     },
@@ -181,7 +212,7 @@
         "7": {
           "name": "person",
           "image": "lodge",
-          "title": "[7] Harald Lodge",
+          "title": "[7] Harold Lodge",
           "x": 11,
           "y": 29
         },
@@ -230,12 +261,40 @@
           "x": 11,
           "y": 21
         },
+        "4": {
+          "name": "catalogue",
+          "image": "catalogue",
+          "title": "[4] Archive Catalogue",
+          "x": 11,
+          "y": 23
+        },
+        "5": {
+          "name": "architectNotes",
+          "image": "architectNotes",
+          "title": "[5] Fowler Archive Remarks",
+          "x": 11,
+          "y": 25
+        },
+        "6": {
+          "name": "hanoverNotes",
+          "image": "hanoverNotes",
+          "title": "[6] Hanover Intake Notes",
+          "x": 11,
+          "y": 27
+        },
+        "7": {
+          "name": "timetable",
+          "image": "timetable",
+          "title": "[7] Chancery Timetable",
+          "x": 11,
+          "y": 29
+        },
         "0": {
           "name": "start",
           "image": "blank",
           "title": "[0] Back",
           "x": 11,
-          "y": 23
+          "y": 40
         }
       }
     },
@@ -266,10 +325,10 @@
     "libraryRecordsInfo": {
       "title": "",
       "links": {
-        "1": {
+        "9": {
           "name": "libraryRecordsA",
           "image": "libraryRecordsA",
-          "title": "[1] Begin",
+          "title": "[9] Begin",
           "x": 56,
           "y": 33
         },
@@ -295,7 +354,7 @@
         "9": {
           "name": "libraryRecordsB",
           "image": "libraryRecordsB",
-          "title": "[9] Forward",
+          "title": "[9] Next",
           "x": 55,
           "y": 47
         },
@@ -314,14 +373,14 @@
         "1": {
           "name": "libraryRecordsA",
           "image": "libraryRecordsA",
-          "title": "[1] Back",
+          "title": "[1] Previous",
           "x": 5,
           "y": 47
         },
         "9": {
           "name": "libraryRecordsC",
           "image": "libraryRecordsC",
-          "title": "[9] Forward",
+          "title": "[9] Next",
           "x": 55,
           "y": 47
         },
@@ -340,7 +399,7 @@
         "1": {
           "name": "libraryRecordsB",
           "image": "libraryRecordsB",
-          "title": "[1] Back",
+          "title": "[1] Previous",
           "x": 5,
           "y": 47
         },
@@ -348,6 +407,54 @@
           "name": "files",
           "image": "blank",
           "title": "[0] Exit",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "architectNotes": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "hanoverNotes": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "timetable": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "catalogue": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Back",
           "x": 59,
           "y": 49
         }
