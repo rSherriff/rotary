@@ -289,12 +289,19 @@
           "x": 11,
           "y": 29
         },
+        "8": {
+          "name": "securityBreaches",
+          "image": "securityBreaches",
+          "title": "[8] Security Breaches",
+          "x": 11,
+          "y": 31
+        },
         "0": {
           "name": "start",
           "image": "blank",
           "title": "[0] Back",
           "x": 11,
-          "y": 31
+          "y": 33
         }
       }
     },
@@ -437,6 +444,18 @@
       }
     },
     "timetable": {
+      "title": "",
+      "links": {
+        "0": {
+          "name": "files",
+          "image": "blank",
+          "title": "[0] Back",
+          "x": 59,
+          "y": 49
+        }
+      }
+    },
+    "securityBreaches": {
       "title": "",
       "links": {
         "0": {
